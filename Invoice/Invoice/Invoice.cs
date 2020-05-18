@@ -26,11 +26,11 @@ namespace Invoice
         {
             if (needEdv == true)
             {
-                Console.WriteLine($"Mehsulun adi:{article}, mehsulun qiymeti: {cost}, mesulun sayi: {quantity}, umumi mebleg(EDV odenilir):{cost * quantity + cost * 0.18}");
+                Console.WriteLine($"Mehsulun adi:{this.article}, mehsulun qiymeti: {this.cost}, mesulun sayi: {this.quantity},Umumi mebleg(EDV odenilir):{this.cost * this.quantity + this.cost * 0.18}");  
             }
             else
             {
-                Console.WriteLine($"Mehsulun adi:{article}, mehsulun qiymeti: {cost}, mesulun sayi: {quantity}, umumi mebleg(EDV odenilmir):{cost * quantity}");
+                Console.WriteLine($"Mehsulun adi:{this.article}, mehsulun qiymeti: {this.cost}, mesulun sayi: {this.quantity},Umumi mebleg(EDV odenilmir):{this.cost * this.quantity}"); 
             }
         }
     }

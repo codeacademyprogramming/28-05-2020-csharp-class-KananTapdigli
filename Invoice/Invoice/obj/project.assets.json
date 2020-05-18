@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kenan\\source\\repos\\Invoice\\Invoice\\Invoice.csproj",
+      "projectUniqueName": "C:\\Users\\Kenan\\Desktop\\28-05-2020-csharp-class-KananTapdigli\\Invoice\\Invoice\\Invoice.csproj",
       "projectName": "Invoice",
-      "projectPath": "C:\\Users\\Kenan\\source\\repos\\Invoice\\Invoice\\Invoice.csproj",
+      "projectPath": "C:\\Users\\Kenan\\Desktop\\28-05-2020-csharp-class-KananTapdigli\\Invoice\\Invoice\\Invoice.csproj",
       "packagesPath": "C:\\Users\\Kenan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kenan\\source\\repos\\Invoice\\Invoice\\obj\\",
+      "outputPath": "C:\\Users\\Kenan\\Desktop\\28-05-2020-csharp-class-KananTapdigli\\Invoice\\Invoice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kenan\\AppData\\Roaming\\NuGet\\NuGet.Config",
