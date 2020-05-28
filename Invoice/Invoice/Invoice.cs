@@ -11,26 +11,53 @@ namespace Invoice
         private string _account;
         private string _customer;
 
+        private int _cost;
+        private string _article;
+
+        public string Article
+        {
+            get
+            {
+                return this._article;
+            }
+
+            set
+            {
+                this._article = value;
+
+                if (this._article.ToLower() == "laptop")
+                {
+                    this._cost = 1400;
+                }
+                else if (this._article.ToLower() == "sd-card")
+                {
+                    this._cost = 30;
+                }
+                else if (this._article.ToLower() == "usb-hab")
+                {
+                    this._cost = 12;
+                }
+            }
+        }
+
+        public int Quantity { get; set; }
+
         public Invoice(string account, string customer, string provider)
         {
             this._provider = provider;
             this._account = account;
-            this._customer = customer;
+            this._customer = customer;         
         }
-
-        public string article { get; set; }
-        public int quantity { get; set; }
-        public double cost { get; set; }
 
         public void CostCalculation(bool needEdv)
         {
             if (needEdv == true)
             {
-                Console.WriteLine($"Mehsulun adi:{this.article}, mehsulun qiymeti: {this.cost}, mesulun sayi: {this.quantity},Umumi mebleg(EDV odenilir):{this.cost * this.quantity + this.cost * 0.18}");  
+                Console.WriteLine($"Mehsulun adi:{this.Article}, mehsulun qiymeti: {this._cost}, mesulun sayi: {this.Quantity},Umumi mebleg(EDV odenilir):{this._cost * this.Quantity + this._cost * 0.18}");  
             }
             else
             {
-                Console.WriteLine($"Mehsulun adi:{this.article}, mehsulun qiymeti: {this.cost}, mesulun sayi: {this.quantity},Umumi mebleg(EDV odenilmir):{this.cost * this.quantity}"); 
+                Console.WriteLine($"Mehsulun adi:{this.Article}, mehsulun qiymeti: {this._cost}, mesulun sayi: {this.Quantity},Umumi mebleg(EDV odenilmir):{this._cost * this.Quantity}"); 
             }
         }
     }
